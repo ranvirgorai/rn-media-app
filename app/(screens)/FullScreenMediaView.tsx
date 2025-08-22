@@ -20,7 +20,7 @@ function FullScreenMediaView() {
   const [mediaList, setMediaList] = useState<any[]>(mediaItems);
   const [loading, setLoading] = useState(false);
 
-  const scale = useRef(new Animated.Value(1)).current; // Use useRef to manage Animated.Value
+  const scale = useRef(new Animated.Value(1)).current; 
   const scaleValue = useRef(1);
 
   useEffect(() => {
@@ -39,7 +39,6 @@ function FullScreenMediaView() {
   }, [scale]);
 
   const handleVideoLoad = () => {
-    // Define the function if needed
     setIsVideoLoaded(true);
   };
 
@@ -58,7 +57,7 @@ function FullScreenMediaView() {
   };
 
   const handleViewableItemsChanged = ({ viewableItems }: any) => {
-    // Define the function if needed
+    
   };
 
 
@@ -86,8 +85,8 @@ function FullScreenMediaView() {
   }, [currentPage, loading, fetchMedia]);
 
   const handleLoadMore = () => {
+    console.log('handleLoadMore');
     if (!loading) {
-      
       setCurrentPage((prevPage) => prevPage + 1);
     }
   };
@@ -130,7 +129,7 @@ function FullScreenMediaView() {
         onScrollToIndexFailed={(info) => {
           console.warn('Scroll to index failed:', info);
           setTimeout(() => {
-            // flatListRef.current?.scrollToIndex({ index: info.index, animated: true }); // This line was commented out in the original file
+            // flatListRef.current?.scrollToIndex({ index: info.index, animated: true }); 
           }, 500);
         }}
         ListFooterComponent={loading ? <ActivityIndicator size="large" color="#0000ff" /> : null}

@@ -73,7 +73,6 @@ function HomeScreen() {
                 resizeMode={ResizeMode.COVER}
                 shouldPlay={isPlaying}
                 isLooping
-                // Remove controls property
               />
               {!isPlaying && (
                 <TouchableOpacity style={styles.playButton} onPress={() => handlePlayButtonPress(item.id)}>
@@ -106,7 +105,7 @@ function HomeScreen() {
   };
 
   const viewabilityConfig = {
-    itemVisiblePercentThreshold: 50, // Adjust this value to ensure the centered item is detected
+    itemVisiblePercentThreshold: 50, 
   };
 
   return (
