@@ -30,20 +30,13 @@
 
 ### Experience Reference  
 - Designed for a **smooth, immersive experience**:  
-  - Easy browsing  
   - Seamless zoom and swipe gestures  
   - Smart video auto-play  
 - Demo video attached for reference.  
 
 ---
 
-## Getting Started  
-
-### Prerequisites  
-- Node.js  
-- React Native CLI
-
-### Installation  
+### Setup and Running the app  
 ```bash
 # Clone the repository
 git clone git@github.com:ranvirgorai/rn-media-app.git
