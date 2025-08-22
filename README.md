@@ -46,10 +46,13 @@
 ### Installation  
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone git@github.com:ranvirgorai/rn-media-app.git
 
 # Navigate into the project directory
-cd <project-folder>
+cd rn-media-app
 
 # Install dependencies
 npm install
+
+# Install dependencies
+npm run ios
