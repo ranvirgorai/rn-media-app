@@ -1,6 +1,40 @@
-# React Native App
+# Overview
 
-## How to run the app
+## Landing Page
+	•	Displays a list of media items in card format.
+	•	Each card includes:
+	   •	Media thumbnail (image or video)
+	   •	Alt text
+	   •	Photographer’s name
+
+
+## Media Thumbnails
+	•	Images and videos are rendered as thumbnails.
+	•	For videos:
+	   •	A play icon overlay is shown.
+	   •	When the video thumbnail scrolls into the center of the screen, it auto plays.
+	   •	When it moves out of view, playback stops.
+	   •	Tapping the play button allows manual control, but only one video plays at a time (playing a new video stops the previous one).
+
+## Detail View
+	•	Tapping on an image or video opens it in detail view.
+	•	Gestures supported in detail view:
+	•	Double tap → Zoom in/out (for images).
+	•	Swipe up or down → Navigate to next/previous media item.
+	•	In detail view, videos auto-play when in view and stop when swiped away.
+
+
+# Media handling
+	•	Initially loads 5 media items.
+	•	Implements infinite scrolling – when the user reaches the end, more content loads dynamically.
+
+# Experience reference video
+	•	A smooth, immersive experience where images and videos are easy to browse, zoom, and play seamlessly.
+	•	Video demo attached for reference.
+
+
+
+# How to run the app
 - Clone the repo
 - run ``` npm install ```
 - run ``` num run ios ```
