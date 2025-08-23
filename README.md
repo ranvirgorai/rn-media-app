@@ -34,6 +34,20 @@
   - Smart video auto-play  
 - Demo video attached for reference.  
 
+### Challenges Faced  
+
+1. **Detecting media items in view**  
+   - Implementing logic to determine which item is currently in the center of the viewport was challenging.  
+   - Ensuring only the centered video auto-plays while stopping others required careful event handling and optimization.  
+
+2. **Optimizing network calls in Detail View**  
+   - When navigating to the media detail page, avoiding redundant API requests was important.  
+   - We optimized by reusing existing data from the landing page, which reduced network overhead and improved responsiveness.  
+
+3. **Smooth video playback & resource management**  
+   - Managing video playback across multiple components while maintaining smooth scrolling was tricky.  
+   - Ensured only one video plays at a time and handled memory, resource cleanup to avoid performance and stability issues.  
+
 ---
 
 ### Setup and Running the app  
